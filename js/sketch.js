@@ -1,12 +1,4 @@
-var isTabActive;
 
-window.onfocus = function () { 
-  isTabActive = true; 
-}; 
-
-window.onblur = function () { 
-  isTabActive = false; 
-}; 
 
 var triangles = [];
 var canvas;
@@ -16,10 +8,8 @@ function setup() {
     canvas.id('CANVAO');
     canvas.parent('secPerfil');
     setInterval(function(){
-        if  (isTabActive){
         CreateTriangle();
-        console.log(CountAliveTriangles());
-    }
+        // console.log(CountAliveTriangles());
     },3000);
     angleMode(DEGREES);
 }
