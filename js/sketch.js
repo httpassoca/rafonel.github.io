@@ -6,9 +6,11 @@ function setup() {
     // canvas.class('hide-on-med-and-up');
     canvas.id('CANVAO');
     canvas.parent('secPerfil');
-    setInterval(CreateTriangle,3000);
+    setInterval(function(){
+        CreateTriangle;
+        console.log(CountAliveTriangles());
+    },3000);
     angleMode(DEGREES);
-    console.log(CountAliveTriangles());
     
 
 }
