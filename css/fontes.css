@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "boston bold";
+    src: url(fontes/Boston-Bold.otf);
+}
+@font-face {
+    font-family: "boston bold it";
+    src: url(fontes/Boston-BoldIt.otf);
+}
+@font-face {
+    font-family: "boston light";
+    src: url(fontes/Boston-Light.otf);
+}
+@font-face {
+    font-family: "boston light it";
+    src: url(fontes/Boston-LightIt.otf);
+}
+@font-face {
+    font-family: "boston regular";
+    src: url(fontes/Boston-Regular.otf);
+}

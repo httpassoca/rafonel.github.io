@@ -1,0 +1,22 @@
+$colors: (accent: #00ff00, background: #000, letter: #eee)
+$fonts: (default: 'boston regular', accent: 'boston light it', title: 'boston bold it')
+
+@import 'sass/utilities'
+@import 'sass/base'
+@import 'sass/mixins'
+@import 'sass/c-section'
+@import 'sass/c-img-about'
+@import 'sass/c-info'
+@import 'sass/c-divider'
+// @import 'sass/c-project'
+// @import 'sass/c-projects'
+
+img
+    height: auto
+html
+    color: map-get($colors, letter) 
+    font-family: map-get($fonts, default)
+
+canvas
+    @extend %u-absolute
+    z-index: 0 

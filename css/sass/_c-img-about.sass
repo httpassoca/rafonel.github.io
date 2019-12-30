@@ -1,0 +1,33 @@
+
+.img-about
+    @extend %u-relative,%u-full-w
+    z-index: 1
+    clip-path: circle(50% at 50% 50%)
+    transform: scale(.8)
+    overflow: hidden
+    height: auto
+    .pic
+        @extend %u-relative
+        transition: all .8s ease
+        &.is-hover
+            filter: brightness(30%) saturate(50%) grayscale(100%) blur(1px)
+    .icons-perfil
+        @extend %u-absolute,%u-full-w
+        height: 100%
+        top: 100%
+        left: 0
+        transition: all .3s cubic-bezier(.63,.41,0,1.02)
+        transition-delay: .5s
+        i
+            font-size: 36px
+            display: inline-block
+            margin: 0px 12px
+            transition: all .2s ease
+            &:nth-of-type(2)
+                transform: translateY(30px)
+            &:nth-of-type(3)
+                transform: translateY(30px)
+        &.is-hover
+            top: calc(70%)
+            
+
