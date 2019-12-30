@@ -8,7 +8,7 @@ function setup() {
     canvas.parent('secPerfil');
     setInterval(function(){
         CreateTriangle();
-        console.log(CountAliveTriangles());
+        // console.log(CountAliveTriangles());
     },3000);
     angleMode(DEGREES);
 }
@@ -16,10 +16,12 @@ function setup() {
 
 function draw() {
     clear();
-    for (var i = triangles.length - 1; i >= 0; i--) {
-        if(triangles[i].isAlive()){
-            triangles[i].update();
-            triangles[i].show();
+    if  (window.onfocus){
+        for (var i = triangles.length - 1; i >= 0; i--) {
+            if(triangles[i].isAlive()){
+                triangles[i].update();
+                triangles[i].show();
+            }
         }
     }
 }
