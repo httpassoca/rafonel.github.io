@@ -9,7 +9,7 @@ class Triangle {
         this.x2 = this.side;
         this.x3 = 0;
 
-        this.age = 0;
+        this.age = 20;
         this.mature = false;
 
         this.rotation = random(0,360);
@@ -31,6 +31,7 @@ class Triangle {
         this.x1 -= 1/100;
         this.x2 += 1/100;
         // this.x3 -= 0/100;
+        
         this.age += 1;
         if(this.mature == false){
             this.alfa = this.age/3;
@@ -40,6 +41,7 @@ class Triangle {
         if(this.alfa >= 255){
             this.mature = true;
         }
+
         if(this.timeRotation == this.time/2){ this.timeRotation = parseInt(random(1,this.time)) }
         if(this.timeY == this.time/2){this.timeY = parseInt(random(1,this.time));}
         if(this.timeX == this.time/2){this.timeX = parseInt(random(1,this.time));}
