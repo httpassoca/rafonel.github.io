@@ -8,7 +8,7 @@ function setup() {
     canvas.parent('secPerfil');
     setInterval(CreateTriangle,3000);
     angleMode(DEGREES);
-    
+    console.log(CountAliveTriangles());
     
 
 }
@@ -23,7 +23,14 @@ function draw() {
         }
     }
 }
-
+function CountAliveTriangles(){
+    let sum = 0
+    for (let i in triangles){
+        if (triangles[i].isAlive())
+            sum += 1;
+    }
+    return sum;
+}
 function CreateTriangle(){
     star = new Triangle();
     append(triangles, star);
