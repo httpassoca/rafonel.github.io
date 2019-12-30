@@ -7,7 +7,7 @@ function setup() {
     canvas.id('CANVAO');
     canvas.parent('secPerfil');
     setInterval(function(){
-        CreateTriangle;
+        CreateTriangle();
         console.log(CountAliveTriangles());
     },3000);
     angleMode(DEGREES);
