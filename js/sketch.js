@@ -7,7 +7,9 @@ function setup() {
     canvas.id('CANVAO');
     canvas.parent('secPerfil');
     setInterval(function(){
+        if  (window.onfocus){
         CreateTriangle();
+        }
         // console.log(CountAliveTriangles());
     },3000);
     angleMode(DEGREES);
@@ -16,14 +18,13 @@ function setup() {
 
 function draw() {
     clear();
-    if  (window.onfocus){
         for (var i = triangles.length - 1; i >= 0; i--) {
             if(triangles[i].isAlive()){
                 triangles[i].update();
                 triangles[i].show();
             }
         }
-    }
+    
 }
 function CountAliveTriangles(){
     let sum = 0
