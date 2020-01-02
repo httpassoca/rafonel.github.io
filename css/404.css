@@ -1,1 +1,2 @@
-.e404{width: 100%;height:auto;transform: scale(.9) translate(-50%,-50%);position: absolute;left: 50%;top: 50%;}
+.e404{position: relative;width: 80%;margin-left: 10%;}
+.e404 img{width: 100%;height: auto;position: absolute;left: 50%;top: 50%;transform: scale(.9) translate(-50%,-50%);}
