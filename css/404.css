@@ -1,2 +1,8 @@
-.e404{position: relative;width: 80%;margin-left: 10%;}
-.e404 img{width: 100%;height: auto;position: absolute;left: 50%;top: 50%;transform: scale(.9) translate(-50%,-50%);}
+*{box-sizing: border-box;}
+html{background-color: #111;}
+.e404{position: relative;width: 100vw;height:100vh;padding: 10%;}
+.e404 img{width: 100%;height: auto;position: absolute;left: 50%;top: 50%;transform: scale(.9) translate(-50%,-50%);background-color: transparent;}
+h1{display: none !important;}
+
+.content{position: fixed;width: 100%;z-index: 2; color: white;font-style: italic;}
+.content a{text-decoration: none;font-weight: bolder;}
