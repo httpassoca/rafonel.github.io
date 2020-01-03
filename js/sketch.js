@@ -10,6 +10,7 @@ function setup() {
     // canvas.parent('secPerfil');
     setTimeout(CreateTriangle,1500)
     setInterval(function(){
+        if(triangles.length < 12)
         CreateTriangle();
         console.log(triangles)
         // console.log(CountAliveTriangles());
