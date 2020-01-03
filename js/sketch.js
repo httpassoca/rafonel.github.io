@@ -1,14 +1,17 @@
 
+const triangles = [];
+const frmRate = 30;
 
-var triangles = [];
-var canvas;
 function setup() {
-    canvas = createCanvas(windowWidth,windowHeight);
+    frameRate(frmRate);
+    const canvas = createCanvas(windowWidth,windowHeight);
     // canvas.class('hide-on-med-and-up');
     canvas.id('CANVAO');
-    canvas.parent('secPerfil');
+    // canvas.parent('secPerfil');
+    setTimeout(CreateTriangle,1500)
     setInterval(function(){
         CreateTriangle();
+        // console.log(triangles.length)
         // console.log(CountAliveTriangles());
     },3000);
     angleMode(DEGREES);
@@ -17,13 +20,14 @@ function setup() {
 
 function draw() {
     clear();
-        for (var i = triangles.length - 1; i >= 0; i--) {
-            if(triangles[i].isAlive()){
-                triangles[i].update();
-                triangles[i].show();
-            }
+    for (var i = triangles.length - 1; i >= 0; i--) {
+        if(triangles[i].isAlive()){
+            triangles[i].update();
+            triangles[i].show();
+        }else{
+            delete triangles[i];
         }
-    
+    }
 }
 function CountAliveTriangles(){
     let sum = 0

@@ -1,30 +1,28 @@
-class Triangle {
-    constructor(){
-        this.side = random(width/10, height/2);
-        // this.side = 15;
-        this.y1 = 0;
-        this.y2 = 0;
-        this.y3 = -this.side*1.7;
-        this.x1 = -this.side;
-        this.x2 = this.side;
-        this.x3 = 0;
+const Triangle = function(){
+    this.side = random(width/10, height/2);
+    this.y1 = 0;
+    this.y2 = 0;
+    this.y3 = -this.side*1.7;
+    this.x1 = -this.side;
+    this.x2 = this.side;
+    this.x3 = 0;
 
-        this.age = 20;
-        this.mature = false;
+    // 21 seconds of life
+    this.life = 21 * 30;
+    this.age = 0;
+    this.mature = false;
+    this.health = (this.life > 255 ? this.life/ 255 : 255/this.life)
+    this.rotation = random(0,360);
+    this.time = 400;
+    this.speed = 1/7;
 
-        this.rotation = random(0,360);
-        this.time = 400;
-        this.speed = 1/7;
+    this.timeX = parseInt(random(1,this.time));
+    this.timeY = parseInt(random(1,this.time));
+    this.timeRotation = parseInt(random(1,this.time));
+    this.locX = random(1,width);
+    this.locY = random(1,height);
 
-        this.timeX = parseInt(random(1,this.time));
-        this.timeY = parseInt(random(1,this.time));
-        this.timeRotation = parseInt(random(1,this.time));
-        this.locX = random(1,width);
-        this.locY = random(1,height);
-        // this.b=random(1,1.4);
-    }
-
-    update(){
+    this.update = function(){
         this.y1 += 1/100;
         this.y2 += 1/100;
         this.y3 -= 1/100;
@@ -34,11 +32,11 @@ class Triangle {
         
         this.age += 1;
         if(this.mature == false){
-            this.alfa = this.age/3;
+            this.alfa = this.age * this.health;
         }else{
-            this.alfa -= 20;
+            this.alfa -= this.health*5;
         }
-        if(this.alfa >= 255){
+        if(this.age >= this.life/1.5){
             this.mature = true;
         }
 
@@ -79,20 +77,19 @@ class Triangle {
             }
         }
         if(this.timeRotation > this.time/2){
-                this.timeRotation -= 1;
-                this.rotation -= 1/10;
+            this.timeRotation -= 1;
+            this.rotation -= 1/10;
         }else{
-                this.timeRotation += 1;
-                this.rotation +=1/10;
+            this.timeRotation += 1;
+            this.rotation +=1/10;
         }
 
-        // this.b +=1/1000;
     }
-    
-    show(){
+    this.show = function(){
         push();
         noFill();
-        // fill(255,255,255);
+        // this.mature ?
+        // stroke(255,255,255) :
         stroke(0,255,0,this.alfa);
         // noStroke();
         smooth();
@@ -102,11 +99,8 @@ class Triangle {
         // scale(this.b);
         triangle(this.x1,this.y1,this.x2,this.y2,this.x3,this.y3);
         pop();
-        // stroke(255);
-        // line(0,this.max,width,this.max);
     }
-
-    isAlive(){
+    this.isAlive = function(){
         if(this.age > 1000){return false}
         else{return true}
     }
