@@ -11,7 +11,7 @@ function setup() {
     setTimeout(CreateTriangle,1500)
     setInterval(function(){
         CreateTriangle();
-        // console.log(triangles.length)
+        // console.log(triangles)
         // console.log(CountAliveTriangles());
     },3000);
     angleMode(DEGREES);
@@ -25,7 +25,7 @@ function draw() {
             triangles[i].update();
             triangles[i].show();
         }else{
-            delete triangles[i];
+            triangles.splice(i,1);
         }
     }
 }
