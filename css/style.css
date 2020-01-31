@@ -43,6 +43,11 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media screen and (max-width: 900px) {
   .hide-on-900 {
     display: none;
@@ -154,20 +159,23 @@ section {
           transition-delay: .5s;
 }
 
-.img-about .icons-perfil i {
-  font-size: 2em;
+.img-about .icons-perfil a {
   display: inline-block;
   margin: 0px 10px;
+}
+
+.img-about .icons-perfil i {
+  font-size: 2em;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
-.img-about .icons-perfil.hide-on-900 i:nth-of-type(2) {
+.img-about .icons-perfil.hide-on-900 a:nth-of-type(2) {
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
 }
 
-.img-about .icons-perfil.hide-on-900 i:nth-of-type(3) {
+.img-about .icons-perfil.hide-on-900 a:nth-of-type(3) {
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
 }
