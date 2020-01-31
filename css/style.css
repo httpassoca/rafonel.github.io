@@ -67,7 +67,6 @@ section {
   scroll-snap-align: start;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
-  max-width: 1050px;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +78,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
 }
 
 @media screen and (max-width: 900px) {
@@ -90,10 +88,13 @@ section {
             flex-direction: column;
     padding: 20px;
     height: initial;
+    min-height: 100vh;
   }
 }
 
 .grid-secPerfil {
+  max-width: 1050px;
+  margin: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
@@ -157,9 +158,6 @@ section {
   font-size: 2em;
   display: inline-block;
   margin: 0px 10px;
-}
-
-.img-about .icons-perfil.hide-on-900 i {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -185,6 +183,7 @@ section {
   margin-top: 10;
   position: initial;
   height: initial;
+  z-index: 2;
 }
 
 .info {
