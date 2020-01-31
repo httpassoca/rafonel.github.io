@@ -1,4 +1,19 @@
 section
     @extend %u-relative
-    overflow: hidden
     background-color: map-get($colors, background)
+    height: 100vh
+    scroll-snap-align: start
+    scroll-snap-type: y mandatory
+    max-width: 1050px
+    padding: 30px
+    
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin: auto 
+
+@media screen and ( max-width: 900px )
+    section
+        flex-direction: column
+        padding: 20px
+        height: initial

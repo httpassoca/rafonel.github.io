@@ -1,13 +1,18 @@
+.case
+    @extend %u-relative
+    clip-path: circle(50% at 50% 50%)
+    width: 100%
+    height: auto
+    max-width: 250px
+    margin: auto
 
 .img-about
-    @extend %u-relative,%u-full-w
+    @extend  %u-relative, %u-text-center
     z-index: 1
-    clip-path: circle(50% at 50% 50%)
-    transform: scale(.8)
-    overflow: hidden
-    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
     .pic
-        @extend %u-relative
         transition: all .8s ease
         &.is-hover
             filter: brightness(30%) saturate(50%) grayscale(100%) blur(1px)
@@ -19,15 +24,24 @@
         transition: all .3s cubic-bezier(.63,.41,0,1.02)
         transition-delay: .5s
         i
-            font-size: 36px
+            font-size: 2em
             display: inline-block
-            margin: 0px 12px
-            transition: all .2s ease
-            &:nth-of-type(2)
-                transform: translateY(30px)
-            &:nth-of-type(3)
-                transform: translateY(30px)
+            margin: 0px 10px
+        &.hide-on-900
+            i
+                transition: all .2s ease
+                &:nth-of-type(2)
+                    transform: translateY(30px)
+                &:nth-of-type(3)
+                    transform: translateY(30px)
         &.is-hover
-            top: calc(70%)
-            
-
+            top: calc(65%)
+        &.show-on-900
+            background-color: rgba(0,0,0,.5)
+            border-radius: 5px
+            padding: 10
+            margin-top: 10
+            position: initial
+            height: initial
+            // margin-top: 20px
+            i

@@ -5,14 +5,13 @@ $fonts: (default: 'boston regular', accent: 'boston light it', title: 'boston bo
 @import 'sass/base'
 @import 'sass/mixins'
 @import 'sass/c-section'
+@import 'sass/_c-grid-secperfil'
 @import 'sass/c-img-about'
 @import 'sass/c-info'
 @import 'sass/c-divider'
-// @import 'sass/c-project'
-// @import 'sass/c-projects'
+@import 'sass/c-project'
+@import 'sass/c-projects'
 
-img
-    height: auto
 html
     color: map-get($colors, letter) 
     font-family: map-get($fonts, default)
@@ -21,4 +20,4 @@ canvas
     @extend %u-absolute
     top: 0
     left: 0
-    z-index: 0 
+    z-index: 0

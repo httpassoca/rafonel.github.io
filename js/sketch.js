@@ -1,10 +1,11 @@
 
 const triangles = [];
 const frmRate = 30;
-
+let section;
 function setup() {
+    section = select('#secPerfil')
     frameRate(frmRate);
-    const canvas = createCanvas(windowWidth,windowHeight);
+    const canvas = createCanvas(section.size().width,section.size().height);
     // canvas.class('hide-on-med-and-up');
     canvas.id('CANVAO');
     // canvas.parent('secPerfil');
@@ -12,7 +13,7 @@ function setup() {
     setInterval(function(){
         if(triangles.length < 12)
         CreateTriangle();
-        console.log(triangles)
+        // console.log(triangles)
         // console.log(CountAliveTriangles());
     },3000);
     angleMode(DEGREES);
@@ -44,5 +45,5 @@ function CreateTriangle(){
     append(triangles, star);
 }
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(section.size().width , section.size().height);
   }
