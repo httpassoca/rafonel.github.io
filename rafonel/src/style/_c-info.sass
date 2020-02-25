@@ -1,0 +1,23 @@
+.info
+    @extend %u-relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    z-index: 1
+    p.title
+        font-size: 2rem
+        font-family: map-get($fonts, title)
+    .subname
+        p
+            font-size: 1.4rem
+            display: inline-block
+            &.tag
+                @extend %u-italic
+                float: right
+    .description
+        margin-top: 20px
+        p
+            @extend %u-text-justify
+            font-size: 1.2rem
+            &::first-letter
+               margin-left: 10px 
