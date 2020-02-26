@@ -2,6 +2,7 @@
     &::-webkit-scrollbar{width: 0px !important}}
 html{
     background-color: #000;
+    min-height: 100vh;
 }
 img{max-height: 100%;max-width: 100%;}
 a{text-decoration: none;color: inherit;}

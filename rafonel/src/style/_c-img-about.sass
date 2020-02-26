@@ -15,14 +15,19 @@
     .pic
         transition: all .8s ease
         &.is-hover
-            filter: brightness(30%) saturate(50%) grayscale(100%) blur(1px)
+           
+    &:hover
+        .icons-perfil
+            top: calc(65%)
+        .pic
+             filter: brightness(30%) saturate(50%) grayscale(100%) blur(1px)
     .icons-perfil
         @extend %u-absolute,%u-full-w
         height: 100%
         top: 100%
         left: 0
         transition: all .3s cubic-bezier(.63,.41,0,1.02)
-        transition-delay: .5s
+            transition-delay: .5s
         a
             display: inline-block
             margin: 0px 10px
@@ -36,8 +41,6 @@
                     transform: translateY(30px)
                 &:nth-of-type(3)
                     transform: translateY(30px)
-        &.is-hover
-            top: calc(65%)
         &.show-on-900
             background-color: rgba(0,0,0,.5)
             border-radius: 5px
