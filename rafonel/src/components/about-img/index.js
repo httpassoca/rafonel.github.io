@@ -1,12 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import Link from './Link'
 function AboutImg(){
-    // let Hover = useState()
-
-    function IconHover(x){
-        console.log(x)
-        x.style.color = x.getAttribute('color');
-    }
     return(
         <div className="img-about">
             <div className="case">
