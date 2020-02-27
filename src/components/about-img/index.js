@@ -4,7 +4,7 @@ function AboutImg(){
     return(
         <div className="img-about">
             <div className="case">
-                <img src="https://raw.githubusercontent.com/Rafonel/rafonel.github.io/master/img/passoca.jpg" alt="" className="pic" />
+                <img src="https://avatars1.githubusercontent.com/u/49541181?s=400&u=1d3e9615ed572998f591aa6ad664879e259a43bc&v=4" alt="" className="pic" />
                 <div className="icons-perfil hide-on-900">
                     <Link href="https://www.behance.net/rafonel" icon="fab fa-behance" color="#0057ff"/>
                     <Link href="https://github.com/Rafonel" icon="fab fa-github" color="#55277e"/>
