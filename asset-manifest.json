@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a625050.chunk.css",
-    "main.js": "/static/js/main.6b05c339.chunk.js",
-    "main.js.map": "/static/js/main.6b05c339.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8c66b6fe.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8c66b6fe.js.map",
-    "static/js/2.ac0abe19.chunk.js": "/static/js/2.ac0abe19.chunk.js",
-    "static/js/2.ac0abe19.chunk.js.map": "/static/js/2.ac0abe19.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.9bd9be71101ee3d8a0dd3a8be55a6619.js": "/precache-manifest.9bd9be71101ee3d8a0dd3a8be55a6619.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.0a625050.chunk.css.map": "/static/css/main.0a625050.chunk.css.map",
-    "static/js/2.ac0abe19.chunk.js.LICENSE.txt": "/static/js/2.ac0abe19.chunk.js.LICENSE.txt"
+    "main.css": "/rafonel.github.io/static/css/main.0a625050.chunk.css",
+    "main.js": "/rafonel.github.io/static/js/main.6b05c339.chunk.js",
+    "main.js.map": "/rafonel.github.io/static/js/main.6b05c339.chunk.js.map",
+    "runtime-main.js": "/rafonel.github.io/static/js/runtime-main.b6c37b2f.js",
+    "runtime-main.js.map": "/rafonel.github.io/static/js/runtime-main.b6c37b2f.js.map",
+    "static/js/2.1178d0bb.chunk.js": "/rafonel.github.io/static/js/2.1178d0bb.chunk.js",
+    "static/js/2.1178d0bb.chunk.js.map": "/rafonel.github.io/static/js/2.1178d0bb.chunk.js.map",
+    "index.html": "/rafonel.github.io/index.html",
+    "precache-manifest.d6227089bd1eb1e57704cf2e59bfed58.js": "/rafonel.github.io/precache-manifest.d6227089bd1eb1e57704cf2e59bfed58.js",
+    "service-worker.js": "/rafonel.github.io/service-worker.js",
+    "static/css/main.0a625050.chunk.css.map": "/rafonel.github.io/static/css/main.0a625050.chunk.css.map",
+    "static/js/2.1178d0bb.chunk.js.LICENSE.txt": "/rafonel.github.io/static/js/2.1178d0bb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8c66b6fe.js",
-    "static/js/2.ac0abe19.chunk.js",
+    "static/js/runtime-main.b6c37b2f.js",
+    "static/js/2.1178d0bb.chunk.js",
     "static/css/main.0a625050.chunk.css",
     "static/js/main.6b05c339.chunk.js"
   ]
