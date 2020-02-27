@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/rafonel.github.io/static/css/main.0a625050.chunk.css",
-    "main.js": "/rafonel.github.io/static/js/main.6b05c339.chunk.js",
-    "main.js.map": "/rafonel.github.io/static/js/main.6b05c339.chunk.js.map",
-    "runtime-main.js": "/rafonel.github.io/static/js/runtime-main.b6c37b2f.js",
-    "runtime-main.js.map": "/rafonel.github.io/static/js/runtime-main.b6c37b2f.js.map",
-    "static/js/2.7202b895.chunk.js": "/rafonel.github.io/static/js/2.7202b895.chunk.js",
-    "static/js/2.7202b895.chunk.js.map": "/rafonel.github.io/static/js/2.7202b895.chunk.js.map",
-    "index.html": "/rafonel.github.io/index.html",
-    "precache-manifest.026eee0a6be7c4a353d7f99ace2b37ef.js": "/rafonel.github.io/precache-manifest.026eee0a6be7c4a353d7f99ace2b37ef.js",
-    "service-worker.js": "/rafonel.github.io/service-worker.js",
-    "static/css/main.0a625050.chunk.css.map": "/rafonel.github.io/static/css/main.0a625050.chunk.css.map",
-    "static/js/2.7202b895.chunk.js.LICENSE.txt": "/rafonel.github.io/static/js/2.7202b895.chunk.js.LICENSE.txt"
+    "main.css": "/Rafonel/rafonel.github.io/static/css/main.0a625050.chunk.css",
+    "main.js": "/Rafonel/rafonel.github.io/static/js/main.6b05c339.chunk.js",
+    "main.js.map": "/Rafonel/rafonel.github.io/static/js/main.6b05c339.chunk.js.map",
+    "runtime-main.js": "/Rafonel/rafonel.github.io/static/js/runtime-main.3cae0640.js",
+    "runtime-main.js.map": "/Rafonel/rafonel.github.io/static/js/runtime-main.3cae0640.js.map",
+    "static/js/2.7202b895.chunk.js": "/Rafonel/rafonel.github.io/static/js/2.7202b895.chunk.js",
+    "static/js/2.7202b895.chunk.js.map": "/Rafonel/rafonel.github.io/static/js/2.7202b895.chunk.js.map",
+    "index.html": "/Rafonel/rafonel.github.io/index.html",
+    "precache-manifest.dfd1eec776bffbb90dff1e7fd71b7396.js": "/Rafonel/rafonel.github.io/precache-manifest.dfd1eec776bffbb90dff1e7fd71b7396.js",
+    "service-worker.js": "/Rafonel/rafonel.github.io/service-worker.js",
+    "static/css/main.0a625050.chunk.css.map": "/Rafonel/rafonel.github.io/static/css/main.0a625050.chunk.css.map",
+    "static/js/2.7202b895.chunk.js.LICENSE.txt": "/Rafonel/rafonel.github.io/static/js/2.7202b895.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b6c37b2f.js",
+    "static/js/runtime-main.3cae0640.js",
     "static/js/2.7202b895.chunk.js",
     "static/css/main.0a625050.chunk.css",
     "static/js/main.6b05c339.chunk.js"
