@@ -1,0 +1,23 @@
+$colors: (accent: #00ff00, background: #000, letter: #eee)
+$fonts: (default: 'boston regular', accent: 'boston light it', title: 'boston bold it')
+
+@import './style/utilities'
+@import './style/base'
+@import './style/mixins'
+@import './style/c-section'
+@import './style/_c-grid-secperfil'
+@import './style/c-img-about'
+@import './style/c-info'
+@import './style/c-divider'
+@import './style/c-project'
+@import './style/c-projects'
+
+html
+    color: map-get($colors, letter) 
+    font-family: map-get($fonts, default)
+
+canvas
+    @extend %u-absolute
+    top: 0
+    left: 0
+    z-index: 0
