@@ -113,9 +113,9 @@ function TrianglesCanvas (){
                     }
                 }
                 p5.frameRate(frmRate);
-                section = p5.select('#secPerfil')
+                section = p5.select('#section')
                 const canvas = p5.createCanvas(section.size().width,section.size().height);
-                canvas.parent('secPerfil');
+                canvas.parent('section');
                 setTimeout(CreateTriangle,1500)
                 setInterval(function(){
                     if(triangles.length < 6)

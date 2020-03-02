@@ -13,10 +13,10 @@ function AboutImg(){
                 </div>
             </div>
             <div className="icons-perfil show-on-900">
-                <Link href="https://www.behance.net/rafonel" icon="fab fa-behance" color="#0057ff"/>
-                <Link href="https://github.com/Rafonel" icon="fab fa-github" color="#55277e"/>
-                <Link href="https://www.linkedin.com/in/rafonel2511/" icon="fab fa-linkedin" color="#0077b5"/>
-                <Link href="https://instagram.com/ra_fon_el/" icon="fab fa-instagram" color="#DD2A7B"/>
+                <Link href="https://www.behance.net/rafonel" icon="fab fa-behance" color="#4d89ff" phone="true"/>
+                <Link href="https://github.com/Rafonel" icon="fab fa-github" color="#7c39b8" phone="true"/>
+                <Link href="https://www.linkedin.com/in/rafonel2511/" icon="fab fa-linkedin" color="#02a9ff" phone="true"/>
+                <Link href="https://instagram.com/ra_fon_el/" icon="fab fa-instagram" color="#e86ca4" phone="true"/>
             </div>
         </div>
     );

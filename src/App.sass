@@ -1,16 +1,19 @@
 $colors: (accent: #00ff00, background: #000, letter: #eee)
-$fonts: (default: 'boston regular', accent: 'boston light it', title: 'boston bold it')
+$fonts: (default: 'Boston Regular', accent: 'Boston Light It', title: 'Boston Bold It')
 
+@import './style/include-media'
 @import './style/utilities'
 @import './style/base'
 @import './style/mixins'
+@import './style/root'
+@import './style/c-menu'
 @import './style/c-section'
-@import './style/_c-grid-secperfil'
+@import './style/c-secPerfil'
 @import './style/c-img-about'
 @import './style/c-info'
 @import './style/c-divider'
-@import './style/c-project'
-@import './style/c-projects'
+@import './style/responsivity'
+
 
 html
     color: map-get($colors, letter) 
@@ -21,3 +24,23 @@ canvas
     top: 0
     left: 0
     z-index: 0
+
+.route-wrapper
+    position: relative
+    margin: auto
+    z-index: 1
+    height: calc(100% - 40px)
+    width: 100%
+    overflow: scroll
+    display: flex
+    flex-direction: row
+    justify-content: center
+    & > div
+        display: flex
+
+.bottomCenter
+    @extend %u-absolute
+    bottom: 20px
+    z-index: 1
+    left: 50%
+    transform: translateX(-50%)

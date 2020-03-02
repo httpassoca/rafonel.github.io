@@ -3,10 +3,9 @@ import React from 'react'
 function AboutInfo(){
     return(
         <div className="info">
-            <p className="title">Rafonel</p>
+            <p className="title">Rafael Freitas</p>
             <hr />
             <div className="subname">
-            <p>Rafael Freitas</p>
             <p className="tag">Full Stack Developer</p>
             </div>
             <div className="description">

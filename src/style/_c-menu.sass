@@ -1,0 +1,36 @@
+.menu
+    @extend %u-b50-background
+    padding: 5px 10px
+    border-radius: 10px
+    color: white
+    list-style-type: none
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+
+    li
+        // border-bottom: 2px solid lime
+        cursor: pointer
+        margin: 0 10px
+        position: relative
+        padding: 5px 10px
+        border-radius: 2px
+        background-color: rgba(30,30,30,.4)
+        transition: all .2s
+        &::after
+            transition: all .2s
+            content: ''
+            width: 0%
+            display: block
+            height: 1px
+            border-radius: 2px
+            background-color: lime
+            opacity: 0
+            margin: auto
+        &:hover
+            background-color: rgba(30,30,30,0)
+            &::after
+                opacity: .7
+                width: 100%
+

@@ -1,18 +1,8 @@
-section
+.section
     @extend %u-relative
     background-color: map-get($colors, background)
-    height: 100vh
+    height: 100%
+    width: 100%
     scroll-snap-align: start
     scroll-snap-type: y mandatory
-    padding: 30px
-    
-    display: flex
-    flex-direction: row
-    align-items: center
-
-@media screen and ( max-width: 900px )
-    section
-        flex-direction: column
-        padding: 20px
-        height: initial
-        min-height: 100vh
+    padding: 20px
