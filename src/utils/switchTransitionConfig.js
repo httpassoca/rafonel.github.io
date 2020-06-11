@@ -35,7 +35,5 @@ const bounceTransition = {
         scale: bounce(1),
     },
 };
-exports.bounceTransition = bounceTransition;
-exports.mapStyles = mapStyles;
 
-// export default {bounceTransition, mapStyles}
+export default {bounceTransition, mapStyles, bounce}

@@ -5,8 +5,8 @@ let triangles = [];
 let frmRate = 30;
 let section;
 
-function TrianglesCanvas (){
-    return(
+function TrianglesCanvas (props){
+    return( props.active &&
         <Sketch
             setup={(p5, parentRef) => {
                 const Triangle = function(){

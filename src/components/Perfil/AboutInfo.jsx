@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AboutInfo(){
+export default function AboutInfo(){
     return(
         <div className="info">
             <p className="title">Rafael Freitas</p>
@@ -20,5 +20,3 @@ function AboutInfo(){
         </div>
     );
 }
-
-export default AboutInfo;

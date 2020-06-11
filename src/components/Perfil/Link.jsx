@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function Link(obj){
+export default function Link(obj){
     const [Hover, setHover] = useState(false);
     let phone = obj.phone 
     return(
@@ -10,4 +10,3 @@ function Link(obj){
 
     );
 }
-export default Link;

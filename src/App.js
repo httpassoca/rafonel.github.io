@@ -1,55 +1,48 @@
 import React from "react";
-import TrianglesCanvas from './components/canvas'
+import TrianglesCanvas from './components/AnimatedWallpaper'
 import { BrowserRouter, Route, Link } from "react-router-dom";
-import { AnimatedSwitch,spring } from 'react-router-transition';
+import { AnimatedSwitch } from 'react-router-transition';
+import Switch from 'react-switch'
+import Transition from './utils/switchTransitionConfig';
+
 import "./App.sass";
-import SecPerfil from "./components/secPerfil";
-import Blog from "./components/blog";
-import Experience from './components/experience'
 
-function mapStyles(styles) {
-  return {
-      opacity: styles.opacity,
-      transform: `scale(${styles.scale})`,
-  };
-}
-function bounce(val) {
-  return spring(val, {
-      stiffness: 330,
-      damping: 22,
-  });
-}
-const bounceTransition = {
-// start in a transparent, upscaled state
-  atEnter: {
-      opacity: 0,
-      scale: 1.2,
-  },
-  // leave in a transparent, downscaled state
-  atLeave: {
-      opacity: bounce(0),
-      scale: bounce(0.8),
-  },
-  // and rest at an opaque, normally-scaled state
-  atActive: {
-      opacity: bounce(1),
-      scale: bounce(1),
-  },
-};
+import Perfil from "./views/PerfilPage";
+import Blog from "./views/BlogPage";
+import Experience from './views/ExperiencePage'
+import { useState } from "react";
 
-function App() {
+
+export default function App() {
+  const [animateBackground, setAnimateBackground] = useState(true)
   return (
     <>
       <BrowserRouter>
+        <div className="switch-area">
+          <div className="switch-field">
+            <Switch
+              checked={animateBackground}
+              uncheckedIcon={false}
+              checkedIcon={false}
+              onChange={() => {setAnimateBackground(!animateBackground);}}
+              onColor="#00AA00" onHandleColor="#00FF00"
+              activeBoxShadow="0px 0px 0px 0px"
+              boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+              handleDiameter={20} height={15} width={30}
+              className="switchHome"
+            />
+            <i className="gg-shape-triangle"></i>
+          </div>
+        </div>
         <section id="section" className="section">
-          <TrianglesCanvas/>
+          <TrianglesCanvas active={animateBackground}/>
           <AnimatedSwitch
-            atEnter={bounceTransition.atEnter}
-            atActive={bounceTransition.atActive}
-            mapStyles={mapStyles}
+            atEnter={Transition.bounceTransition.atEnter}
+            atActive={Transition.bounceTransition.atActive}
+            mapStyles={Transition.mapStyles}
             className="route-wrapper">
             <Route exact path="/">
-              <SecPerfil />
+              <Perfil />
             </Route>
             <Route exact path="/blog">
               <Blog/>
@@ -76,5 +69,3 @@ function App() {
     </>
   );
 }
-
-export default App;

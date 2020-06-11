@@ -1,6 +1,7 @@
 import React from "react";
 
-function Blog() {
+
+export default function BlogPage() {
   return (
       <div className="blog">
         <p>My blog. Wait for more.</p>
@@ -8,4 +9,3 @@ function Blog() {
   );
 }
 
-export default Blog;
