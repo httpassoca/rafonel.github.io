@@ -17,3 +17,9 @@
         bottom: 70px !important
     .route-wrapper
         height: calc(100% - 100px) !important
+@include media(">=tablet")
+    .case:hover
+        .icons-perfil.hide-on-900
+            top: calc(65%)
+        .pic
+            filter: brightness(30%) saturate(50%) grayscale(100%) blur(1px)
